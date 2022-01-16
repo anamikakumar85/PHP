@@ -1,0 +1,22 @@
+<div>
+
+<h2>Add Ingredients to the Recipe</h2>
+<hr>
+</div>
+<form action='?action=addRecipe' method='post' >
+
+
+Ingredient Name*:<br />
+<input type="text" name="ingredientname" ><br />
+
+Quantity(Between 0 and 1000)*:<br />
+<input type="number" name="quantity" min ="0" max ="1000" step ="0.1" ><br />
+
+Unit*:<br />
+<input type="text" name="unitname" >
+
+<br />
+<input type ='submit' value="Save or Add More Ingredients" name ="Add_More_ingredient_btn">
+<input type ='submit' value="DONE" name ="ingredient_submit_btn">
+
+</form>

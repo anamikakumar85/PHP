@@ -1,0 +1,22 @@
+<form action="?action=admin" method="post" enctype="multipart/form-data">
+	
+	Recipe Name:<br />
+	<input type="text" name="recipename" value="__RECIPE_NAME__"><br />
+	Content:<br />
+	<textarea name="content">__CONTENT__</textarea><br />
+	Difficulty Level Easy/Medium/hard:<br />
+	<input type="text" name="level" value="__DIFFICULTY_LEVEL__"><br />
+	
+	Photo Available:<br />
+	<img src='uploads/__PHOTO__' width='100'/><br />
+	<br /><p>Do You want to add or change photo</p>
+	<input type="hidden" name="defaultrecipephoto" value="__DEFAULTRECIPEPHOTO__" /><br />
+	Add/Change Photo:
+	YES<input class="feedback_radioBtn" type="radio" name="change_confirm" value="YES">
+	NO<input class="feedback_radioBtn" type="radio" name="change_confirm" value="NO" checked><br /><br />
+	
+	<input type="file" name="changephoto" value = "__CHANGEPHOTO__"><br />
+	<!-- Auftragnr wird versteckt mitgeschickt -->
+	<input type="hidden" name="recipeid" value="__RECIPEID__" />
+	<input type="submit" name="savechanges" value="Change" />
+</form>

@@ -1,0 +1,21 @@
+<form action='?action=addRecipe' method='post' enctype="multipart/form-data">
+				
+<p>Select sub categorie<select  name ='sub_categorie' >
+__OPTION__	
+</select>				
+</p>
+<p>__RECIPE_NAME_ERROR__</p>				
+<p>Add New Recipe name *<input  type ='text' name ="new_recipe" value="__NEW_RECIPE_NAME__"/></p>
+<p>Select Difficulty Level<select  name ='difficulty_level' >
+	<option value ='1' >Easy</option>
+	<option value ='2' >Medium</option>
+	<option value ='3' >Hard</option>
+	</select>
+</p>
+<p>Cooking directions<textarea  type ='textarea' name ="direction" value="__COOKING_DIRECTION__"></textarea></p>
+<p>Enter the photo<input type ='file' name ="uploadfile" ></p>
+
+
+<p><input type ='submit' value="Add Recipe" name ="recipe_submit_btn"></p>	
+<p>*= Required</p>
+</form>
